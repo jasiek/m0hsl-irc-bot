@@ -1,10 +1,22 @@
+PATH
+  remote: ../cinch-pskreporter
+  specs:
+    cinch-pskreporter (0.1.1)
+      cinch (~> 2)
+      hashie (~> 0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     cinch (2.2.5)
+    cinch-identify (1.7.0)
+      cinch (~> 2.0)
+    hashie (0.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   cinch
+  cinch-identify
+  cinch-pskreporter!
