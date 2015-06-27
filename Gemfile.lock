@@ -1,5 +1,7 @@
-PATH
-  remote: ../cinch-pskreporter
+GIT
+  remote: https://github.com/jasiek/cinch-pskreporter.git
+  revision: 9f6406d2a64e2645ba10fd0fa7dccd75d889b424
+  branch: master
   specs:
     cinch-pskreporter (0.1.1)
       cinch (~> 2)
