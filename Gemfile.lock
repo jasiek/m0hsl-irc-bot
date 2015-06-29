@@ -13,6 +13,7 @@ GEM
     cinch (2.2.5)
     cinch-identify (1.7.0)
       cinch (~> 2.0)
+    cinch-logger-canonical (0.0.1)
     hashie (0.4.0)
 
 PLATFORMS
@@ -21,7 +22,5 @@ PLATFORMS
 DEPENDENCIES
   cinch
   cinch-identify
+  cinch-logger-canonical
   cinch-pskreporter!
-
-BUNDLED WITH
-   1.10.5
