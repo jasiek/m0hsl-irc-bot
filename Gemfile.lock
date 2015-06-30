@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jasiek/cinch-pskreporter.git
-  revision: 3468856971787a06e1e6bac84fc0e7261c094f3f
+  revision: d7ec87bc1ec78266e7ded7a4fab45f0eb6569cbf
   branch: master
   specs:
     cinch-pskreporter (0.1.1)
