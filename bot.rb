@@ -9,7 +9,7 @@ bot = Cinch::Bot.new do
   configure do |c|
     c.nick = 'm0hsl-bot'
     c.server = "irc.freenode.net"
-    c.channels = [ "#lhs-radio", "#london-hack-space" ]
+    c.channels = [ "#lhs-radio", "#london-hack-space", "#london-hack-space-infrastructure", "#london-hack-space-dev" ]
     c.plugins.plugins = [Cinch::Plugins::Identify,
                          Cinch::Plugins::PSKReporter,
                          Cinch::Plugins::TwitterWatch]
@@ -33,8 +33,9 @@ bot = Cinch::Bot.new do
   end
 end
 
-bot.loggers << Cinch::Logger::CanonicalLogger.new('lhs-radio', bot)
-bot.loggers << Cinch::Logger::CanonicalLogger.new('london-hack-space', bot)
+bot.channels.each do |channel|
+  bot.loggers << Cinch::Logger::CanonicalLogger.new(channel, bot)
+end
 
 # We tweet only from time to time.
 Cinch::Plugins::TwitterWatch.timers.last.interval = 600
