@@ -34,6 +34,7 @@ bot = Cinch::Bot.new do
 end
 
 bot.channels.each do |channel|
+  channel = channel.gsub(/#/, '')
   bot.loggers << Cinch::Logger::CanonicalLogger.new(channel, bot)
 end
 
