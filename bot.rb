@@ -33,9 +33,8 @@ bot = Cinch::Bot.new do
   end
 end
 
-bot.channels.each do |channel|
-  channel = channel.gsub(/#/, '')
-  bot.loggers << Cinch::Logger::CanonicalLogger.new(channel, bot)
+bot.config.channels.each do |channel|
+  bot.loggers << Cinch::Logger::CanonicalLogger.new(channel.gsub(/#/, ''), bot)
 end
 
 # We tweet only from time to time.
