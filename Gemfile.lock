@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/bhaberer/cinch-logger-canonical.git
+  revision: 0c2e4544c6bf203bb2fd28349489e2216cdb528b
+  branch: master
+  specs:
+    cinch-logger-canonical (0.0.1)
+
+GIT
   remote: https://github.com/jasiek/cinch-pskreporter.git
   revision: d7ec87bc1ec78266e7ded7a4fab45f0eb6569cbf
   branch: master
@@ -15,7 +22,6 @@ GEM
     cinch (2.2.5)
     cinch-identify (1.7.0)
       cinch (~> 2.0)
-    cinch-logger-canonical (0.0.1)
     cinch-toolbox (1.1.4)
       nokogiri (~> 1.6.0)
     cinch-twitterwatch (1.0.2)
@@ -57,6 +63,6 @@ PLATFORMS
 DEPENDENCIES
   cinch
   cinch-identify
-  cinch-logger-canonical
+  cinch-logger-canonical!
   cinch-pskreporter!
   cinch-twitterwatch
