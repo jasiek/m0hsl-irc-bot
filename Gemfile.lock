@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/jasiek/cinch-pskreporter.git
-  revision: d7ec87bc1ec78266e7ded7a4fab45f0eb6569cbf
+  revision: 342504168d1796953e5c65dccfa3b28caf84f772
   branch: master
   specs:
     cinch-pskreporter (0.1.1)
@@ -19,7 +19,7 @@ GEM
   specs:
     addressable (2.3.8)
     buftok (0.2.0)
-    cinch (2.2.5)
+    cinch (2.2.6)
     cinch-identify (1.7.0)
       cinch (~> 2.0)
     cinch-toolbox (1.1.4)
