@@ -19,7 +19,8 @@ bot = Cinch::Bot.new do
       type: :nickserv,
     }
     c.plugins.options[Cinch::Plugins::PSKReporter] = {
-      watchers: { '#lhs-radio' => ['m0hsl'] }
+      watchers: { '#lhs-radio' => ['m0hsl'] },
+      color: :brown
     }
     c.plugins.options[Cinch::Plugins::TwitterWatch] = {
       consumer_key:    ENV['TWITTER_CONSUMER_KEY'],
