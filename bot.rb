@@ -8,6 +8,9 @@ require "cinch/plugins/pskreporter"
 bot = Cinch::Bot.new do
   configure do |c|
     c.nick = 'm0hsl-bot'
+    c.port = 7000
+    c.ssl.use = true
+
     c.server = "irc.freenode.net"
     c.channels = [ "#lhs-radio", "#london-hack-space", "#london-hack-space-infrastructure", "#london-hack-space-dev" ]
     c.plugins.plugins = [Cinch::Plugins::Identify,
